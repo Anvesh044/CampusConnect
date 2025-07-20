@@ -82,8 +82,19 @@ CampusConnect/
 ├── public/
 ├── tailwind.config.js
 └── package.json
-📸 Screenshots (Add Yours!)
-Login Page	Dashboard	Admin Panel
+📸 Screenshots of my project
+<img width="1849" height="872" alt="image" src="https://github.com/user-attachments/assets/f0950856-db7e-42b3-b4d1-a9d7a041be11" />
+<img width="1802" height="877" alt="image" src="https://github.com/user-attachments/assets/a43308a1-8da5-4c44-b98f-b5caf73afa8d" />
+<img width="1789" height="849" alt="image" src="https://github.com/user-attachments/assets/749183fe-8008-46e6-87a9-9c0499ff5729" />
+<img width="1840" height="858" alt="image" src="https://github.com/user-attachments/assets/9afa62c2-8124-40d2-ab69-06448fa03fe6" />
+<img width="1757" height="834" alt="image" src="https://github.com/user-attachments/assets/7bfb303b-3d54-4ca7-a700-742fafecd7d9" />
+<img width="1652" height="860" alt="image" src="https://github.com/user-attachments/assets/150b703a-fa28-437c-b8c8-1552eba2dcb9" />
+
+
+
+
+
+
 
 🧩 Future Enhancements
 📄 Resume Parser (AI-powered)
