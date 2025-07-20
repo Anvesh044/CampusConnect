@@ -1,0 +1,80 @@
+/* src/pages/Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e9f5ec; /* light green background */
+}
+
+.form-box {
+  background: #fff; /* white card */
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 128, 0, 0.15); /* subtle green shadow */
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #2e7d32; /* dark green heading */
+}
+
+.form-box input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f6fff9; /* very light green */
+}
+
+.form-box input:focus {
+  border-color: #4caf50; /* green border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+.form-box button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+/* Primary button - Green */
+.form-box button.login-btn {
+  background-color: #4caf50; /* green */
+  color: white;
+}
+.form-box button.login-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Secondary button - Blue */
+.form-box button.secondary-btn {
+  background-color: #007bff; /* blue */
+  color: white;
+}
+.form-box button.secondary-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Accent button - Brownish Orange */
+.form-box button.accent-btn {
+  background-color: #d2691e; /* chocolate/brown-orange */
+  color: white;
+}
+.form-box button.accent-btn:hover {
+  background-color: #a0522d;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
