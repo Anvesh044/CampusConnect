@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# 🎓 CampusConnect
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 🔐 A full-stack Training and Placement Management System for Students, TPOs, and Recruiters.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- 🔐 Secure Login/Register with Email & Google Auth
+- 🎓 Student Dashboard: Apply for Drives, Upload Resume, View Offer Letter
+- 🧑‍💼 TPO Panel: Add Drives, Upload Offer Letters, Track Placements
+- 📈 Analytics Dashboard: Dynamic charts and stats (Avg. Offers, Branch-wise)
+- 📢 Admin Notifications to Students
+- 📂 Export Student Data as CSV
+- 📄 View Offer Letters in PDF format
+- 💅 Beautiful UI with TailwindCSS & Chart.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Tech Stack
 
-### `npm test`
+| Frontend        | Backend         | Database          | Others                |
+|-----------------|------------------|-------------------|------------------------|
+| React.js        | Node.js + Express| Firebase Firestore| TailwindCSS, Chart.js |
+| React-Router    | REST APIs        | Firebase Auth     | React-Toastify        |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Anvesh044/CampusConnect.git
+cd CampusConnect
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Firebase Configuration
+Create a file at src/firebaseConfig.js:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+js
+Copy
+Edit
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
-### `npm run eject`
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  // ...rest of the config
+};
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+export const auth = getAuth(app);
+4. Start the Frontend
+bash
+Copy
+Edit
+npm start
+5. (Optional) Start Backend Server
+bash
+Copy
+Edit
+cd backend
+node server.js
+🧠 Folder Structure
+php
+Copy
+Edit
+CampusConnect/
+├── src/
+│   ├── pages/             # All main screens (Login, Dashboards, etc.)
+│   ├── Components/        # Reusable UI components
+│   ├── firebaseConfig.js  # Firebase setup
+├── backend/               # Express server (optional)
+├── public/
+├── tailwind.config.js
+└── package.json
+📸 Screenshots (Add Yours!)
+Login Page	Dashboard	Admin Panel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧩 Future Enhancements
+📄 Resume Parser (AI-powered)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📧 Email Notifications
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📊 Recruiter Portal
 
-## Learn More
+📱 Mobile-first UI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🏆 Leaderboard for top offers
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🤝 Contributing
+Pull requests are welcome!
+Create an issue first to discuss a feature or bug.
 
-### Code Splitting
+📜 License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👨‍💻 Developed By
+Anvesh R Bekal
+📌 Full Stack Developer | 2nd Year Engineering Student
+🔗 GitHub | LinkedIn
 
-### Analyzing the Bundle Size
+💼 Empowering your future, one login at a time
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+yaml
+Copy
+Edit
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📌 **Pro tip:** After adding the file, push it like this:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git add README.md
+git commit -m "📘 Added complete README file"
+git push origin main
